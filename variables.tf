@@ -9,6 +9,6 @@ terraform {
 provider "spacelift" {}
 
 variable "new_stack_name" {
-  type        = string
-  description = "description new-stack-name description"
+  type = string
+  description = "Description for the stack to create."
 }

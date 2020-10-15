@@ -2,5 +2,4 @@ version: "1"
 module_version: 0.0.51
 runner_image: spacelift/runner:latest
 terraform_versions:
-  - "0.12.26"
-  - "0.12.27"
+  - "0.13.0"

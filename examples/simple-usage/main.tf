@@ -3,7 +3,7 @@ provider "spacelift" {
 }
 
 module "example-stack" {
-  source = "../"
+  source = "spacelift.io/spacelift-io/example/spacelift"
 
   new_stack_name = "example-stack"
 

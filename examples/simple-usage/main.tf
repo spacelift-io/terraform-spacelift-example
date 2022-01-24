@@ -1,9 +1,17 @@
+terraform {
+  required_providers {
+    spacelift = {
+      source = "spacelift-io/spacelift"
+    }
+  }
+}
+
 provider "spacelift" {
   alias = "my-spacelift"
 }
 
 module "example-stack" {
-  source = "spacelift.io/spacelift-io/example/spacelift"
+  source = "../../"
 
   new_stack_name = "example-stack"
 

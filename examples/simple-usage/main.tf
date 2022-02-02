@@ -13,7 +13,7 @@ provider "spacelift" {
 module "example-stack" {
   source = "../../"
 
-  new_stack_name = "example-stack"
+  new_stack_name = "example-stack-123"
 
   providers = {
     spacelift = spacelift.my-spacelift

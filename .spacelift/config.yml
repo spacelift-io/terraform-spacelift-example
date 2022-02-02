@@ -2,6 +2,20 @@ version: "1"
 module_version: 0.0.44
 runner_image: spacelift/runner:latest
 
+test_defaults:
+  before_plan:
+    - echo "before_plan"
+  after_plan:
+    - echo "after_plan"
+  before_apply:
+    - echo "before_apply"
+  after_apply:
+    - echo "after_apply"
+  before_destroy:
+    - echo "before_destroy"
+  after_destroy:
+    - echo "after_destroy"
+
 tests:
   - name: Simple Usage
     project_root: examples/simple-usage
